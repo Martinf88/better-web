@@ -1,1 +1,40 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@400;700&display=swap');
+
+
+* {
+	font-family: "audiowide";
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+  }
+
+  .top-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	color: #fff;
+	background: linear-gradient(to left, #d52e2e, #ffffff);
+	padding-right: 1em;
+  }
+
+.menu {
+	list-style-type: none;
+}
+
+
+main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	background-color: #fffbf7;
+	color: #d52e2e;
+}
+
+footer {
+	background-color: #d36e6e;
+	padding: 5em;
+}
