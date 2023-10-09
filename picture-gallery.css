@@ -1,0 +1,18 @@
+main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	background-color: #f9f5f5;
+	color: #d52e2e;
+}
+
+.welcome-b {
+	margin-top: 1em;
+	background-color:#d52e2e ;
+	color:#f9f5f5;
+	padding: 0.5em 1em;
+	cursor: pointer;
+}
