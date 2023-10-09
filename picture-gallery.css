@@ -3,10 +3,11 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	justify-content: center;
+	justify-content: top;
 	align-items: center;
 	background-color: #f9f5f5;
 	color: #d52e2e;
+
 }
 
 .welcome-b {
@@ -15,4 +16,8 @@ main {
 	color:#f9f5f5;
 	padding: 0.5em 1em;
 	cursor: pointer;
+}
+.welcome-p, .welcome-h  {
+	text-align: center;
+	margin-top: 0.5em;
 }
