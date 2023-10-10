@@ -1,0 +1,15 @@
+main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: top;
+	align-items: center;
+	background-color: #f6efef;
+	color: #d52e2e;
+
+}
+
+.huvudrubrik {
+	margin-top: 1em;
+}
