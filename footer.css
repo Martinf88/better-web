@@ -1,0 +1,13 @@
+footer {
+	display: flex;
+	background-color: #d52e2e;
+	color: #f9f5f5;
+	padding: 3em;
+	justify-content: space-between;
+	
+}
+
+.foot-link {
+	text-decoration: none;
+	color: #f9f5f5;
+}
