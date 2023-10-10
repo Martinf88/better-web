@@ -1,0 +1,11 @@
+main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	background-color: #f9f5f5;
+	color: #d52e2e;
+
+}
