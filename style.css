@@ -80,7 +80,7 @@
   }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
-	transform: rotate(405deg);
+	transform: rotate(315deg);
 	margin-top: 0px;
 	
 }
@@ -92,6 +92,7 @@
 	cursor: pointer;
 	margin-bottom: 1.5em;
 	margin-right: 2em;
+	
 }
 
 
