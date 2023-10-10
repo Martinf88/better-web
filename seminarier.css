@@ -7,9 +7,29 @@ main {
 	align-items: center;
 	background-color: #f6efef;
 	color: #d52e2e;
+	font-weight: lighter;
 
 }
 
 .huvudrubrik {
 	margin-top: 1em;
+	text-decoration: underline;
+	font-weight: lighter;
+}
+
+.sem-lista {
+	margin: 1em 0 5em 0;
+	color: black;
+}
+
+ul > p {
+	margin: 0.2em 0 1em 0;
+	font-style: italic;
+	color: rgb(90, 88, 88);
+}
+
+li > h4 {
+	color: #d52e2e;
+	font-weight: lighter;
+	font-style: italic;
 }
