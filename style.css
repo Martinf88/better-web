@@ -22,7 +22,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: end;
-	color: #f9f5f5;
 	background-color: #d52e2e;
 	/* background: linear-gradient(to right, #d52e2e, #ff8585); */
 	padding-right: 1em;
@@ -41,8 +40,7 @@
 
 .button {
 	text-decoration: none;
-	color: #fff;
-	padding: 10px 0 10px 0;
+	color: #f9f5f5;
 }
 
 #menu-toggle {
@@ -90,8 +88,9 @@
 .menu-button-container{
 	display: none;
 	cursor: pointer;
-	margin-bottom: 1.5em;
-	margin-right: 2em;
+	margin-bottom: 0;
+	margin-right: 0;
+	padding: 1.5em;
 	
 }
 

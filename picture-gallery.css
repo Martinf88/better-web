@@ -1,13 +1,19 @@
-main {
+main  {
 	min-height: 100vh;
 	display: flex;
-	flex-direction: column;
 	flex-grow: 1;
+	align-items: top;
 	justify-content: center;
-	align-items: center;
 	background-color: #f9f5f5;
 	color: #d52e2e;
+}
 
+.welcome-bunt {
+	text-align: center;
+	margin-top: 3em;
+	background-color: black;
+	height: 7.5em;
+	flex-grow: 1;
 }
 
 .welcome-b {
@@ -17,7 +23,7 @@ main {
 	padding: 0.5em 1em;
 	cursor: pointer;
 }
-.welcome-p, .welcome-h  {
+.welcome-p  {
 	text-align: center;
 	margin-top: 0.5em;
 }
