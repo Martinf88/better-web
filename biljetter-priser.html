@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,12 +32,97 @@
 
 	
 	<main>
-		<h1>Formulär</h1>
-		<p>Man kan anmäla sig till hela konferensen, eller köpa dagspass för enskilda dagar.</p>
-		<p>En anmälan ska även innehålla namn, adress, 	e-postadress.</p>
-		<p>Man kan beställa mat, som kan vara kött/fisk/vegetarisk. Möjlighet att anmäla allergier.</p>
+			<header>
+				<h1 class="tickets"> Biljetter & Mat </h1>
+			</header>
+		
+		<div class="all-content-container">
+				<form>
+					<p class="name-etc">Personuppgifter</p>
+					<section class="form-section">
+						<label for="form-name"> Skriv in ditt namn </label>
+						<input id="form-name" type="text" placeholder="För- & efternamn"
+							required
+							minlength="5"
+
+							/>
+						<p class="error-message"> Var vänlig fyll i fältet</p>
+					</section>
+					
+					<section class="form-section">
+						<label for="form-adress"> Skriv din adress </label>
+						<input id="form-adress" type="text" required value="" placeholder="Adress" />
+						<p class="error-message"> Var vänlig fyll i fältet</p>
+					</section>
+		
+					<section class="form-section">
+						<label for="form-e-post"> Skriv din e-postadress </label>
+						<input id="form-e-post" type="email" required value"" placeholder="E-post" />
+						<p class="error-message"> Fyll i en giltig e-postadress</p>
+					</section>
+
+					<p class="name-etc">Köp biljetter</p>
+					<section class="form-section">
+						<div>
+							<input type="checkbox" name="alla" id="dagar-alla">
+							<label for="dagar-alla">Alla dagar</label>
+						</div>
+						<div>
+							<input type="checkbox" name="fri" id="dagar-1">
+							<label for="dagar-1">20/10</label>
+						</div>
+						<div>
+							<input type="checkbox" name="sat" id="dagar-2">
+							<label for="dagar-2">21/10</label>
+						</div>
+						<div>
+							<input type="checkbox" name="sun" id="dagar-3">
+							<label for="dagar-3">22/10</label>
+						</div>
+					</section>
+		
+					<section class="form-section">
+						<h2 class="kostval"> Kostval </h2>
+						<div>
+							<input id="mat" type="radio" name="veg" />
+							<label for="mat"> Vegetariskt </label>	
+						</div>
+						<div>
+							<input id="mat" type="radio" name="kött" />
+							<label for="mat"> Kött </label>
+						</div>
+						<div>
+							<input id="mat" type="radio" name="fisk" /> 
+							<label for="mat"> Fisk </label>
+						</div>
+						<div class="allergiuppmaning">
+							<p>Har du några allergier eller speciella kostrestriktioner som vi bör vara medvetna om?</p><p> Var vänlig fyll i informationen nedan så att vi kan anpassa din upplevelse.</p>
+						</div>
+						
+						<div>
+							<label for="allergies">Allergier</label>
+							<input class="gluten-mm" type="text" name="allergi" id="allergies" placeholder="fyll i här...">
+						</div>
+		
+					</section>
+
+					<section>
+						<button>
+							Slutför köp
+						</button>
+					</section>
+				</form>
+
+				<div class="mer-info">
+					<h2 class="rubrik-infor">Priser</h2>
+					<p>Endagarspass: 150kr</p>
+					<p>Alla dagar: 400kr</p>
+				</div>
 
 
+		</div>
+			
+				
 
 	</main>
 
