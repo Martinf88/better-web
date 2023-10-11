@@ -13,32 +13,57 @@ main {
 	justify-content: space-around;
 }
 
-.tickets {
+.sign-up-header {
 	text-align: center;
-	color: black;
-	margin-bottom: 1em;
+	margin: 1em 0 1em;
+	padding: 1em;
+	background-color: rgb(252, 166, 166);
+	-webkit-text-fill-color: #f9f5f5;
+  	-webkit-text-stroke: 1px #d52e2e;
 }
 
+
 .name-etc {
-	margin-bottom: 1em;
+	margin: 1em 0 1em;
+}
+
+.buy-tickets {
+	border-top: 2px solid black;
 }
 .allergiuppmaning {
 	font-size: small;
 	border-top: 2px solid black;
 	margin-top: 20px;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	font-size: medium;
+	font-style: italic;
 }
 
+.veg {
+	color:rgb(48, 185, 48);
+}
+.meat{
+	color:rgb(202, 55, 55);
+}
+.fish {
+	color: rgb(56, 56, 205);
+}
 form {
 	border: 2px solid rgb(111, 33, 33);
 	border-radius: 10px;
 	margin: 0.5em 0;
 	padding: 0 1em;
+	font-style: italic;
 }
 
 .form-section {
 	display: flex;
 	flex-direction: column;
 	margin: 1em 0;
+}
+.ticket-checklist {
+	color: rgb(255, 255, 0);
 }
 
 input:valid {
