@@ -4,12 +4,61 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: top;
-	align-items: center;
 	background-color: #f9f5f5;
-	color: #d52e2e;
 
 }
 
-h1 {
-	margin: 1em 0 3em;
+.all-content-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tickets {
+	text-align: center;
+	color: black;
+	margin-bottom: 1em;
+}
+
+.name-etc {
+	margin-bottom: 1em;
+}
+.allergiuppmaning {
+	font-size: small;
+	border-top: 2px solid black;
+	margin-top: 20px;
+}
+
+form {
+	border: 2px solid rgb(111, 33, 33);
+	border-radius: 10px;
+	margin: 0.5em 0;
+	padding: 0 1em;
+}
+
+.form-section {
+	display: flex;
+	flex-direction: column;
+	margin: 1em 0;
+}
+
+input:valid {
+	border-right: 1em solid rgb(35, 130, 71);
+	
+}
+input:invalid {
+	border-right: 1em solid rgb(111, 33, 33);
+}
+
+.gluten-mm:valid {
+	border-right: 2px solid black;
+}
+
+.error-message {
+	visibility: hidden;
+	margin: 0;
+	color: rgb(111, 33, 33);
+	font-weight: bold;
+}
+input:invalid + .error-message {
+	visibility: visible;
 }
