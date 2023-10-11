@@ -4,8 +4,21 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: top;
-	background-color: #f9f5f5;
 
+}
+
+form {
+	border-radius: 10px;
+	margin: 0.5em 0;
+	padding: 0 1em;
+	font-style: italic;
+	max-width: 30em;
+}
+
+.form-section {
+	display: flex;
+	flex-direction: column;
+	margin: 1em 0;
 }
 
 .all-content-container {
@@ -24,66 +37,112 @@ main {
 
 
 .name-etc {
-	margin: 1em 0 1em;
+	margin: 1em 0 2em;
+	border-bottom: 2px solid black;
 }
+/* ------------------------------------------------------- */
 
 .buy-tickets {
-	border-top: 2px solid black;
-}
-.allergiuppmaning {
-	font-size: small;
-	border-top: 2px solid black;
-	margin-top: 20px;
-	margin-bottom: 1em;
+	border-bottom: 2px solid black;
+	margin: 2em 0 2em;
 	padding-top: 1em;
-	font-size: medium;
-	font-style: italic;
+}
+
+.ticket-checklist {
+	background-color: rgb(215, 215, 215);
+	border-radius: 5px;
+	margin-bottom: 2px;
+}
+/* ----------------------------------------------------- */
+
+.kostval {
+	border-bottom: 2px solid black;
+	margin: 1em 0 2em;
 }
 
 .veg {
 	color:rgb(48, 185, 48);
 }
 .meat{
-	color:rgb(202, 55, 55);
+	color: #d52e2e;
 }
 .fish {
 	color: rgb(56, 56, 205);
 }
-form {
-	border: 2px solid rgb(111, 33, 33);
-	border-radius: 10px;
-	margin: 0.5em 0;
-	padding: 0 1em;
+
+.allergiuppmaning {
+	font-size: small;
+	border-top: 2px solid black;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	font-size: medium;
 	font-style: italic;
 }
 
-.form-section {
-	display: flex;
-	flex-direction: column;
-	margin: 1em 0;
+.finalize {
+	margin-top: 1em;
+	background-color:#d52e2e ;
+	color:#f9f5f5;
+	padding: 0.5em 1em;
+	cursor: pointer;
 }
-.ticket-checklist {
-	color: rgb(255, 255, 0);
-}
+/* ------------------------------------------------------- */
 
 input:valid {
-	border-right: 1em solid rgb(35, 130, 71);
+	border: 2px solid rgb(59, 207, 115);
 	
 }
 input:invalid {
-	border-right: 1em solid rgb(111, 33, 33);
+	border: 2px solid #d52e2e;
 }
 
 .gluten-mm:valid {
-	border-right: 2px solid black;
+	border-color: black;
 }
 
 .error-message {
 	visibility: hidden;
 	margin: 0;
-	color: rgb(111, 33, 33);
-	font-weight: bold;
+	color: #d52e2e;
 }
 input:invalid + .error-message {
 	visibility: visible;
+}
+
+input {
+	max-width: 25em;
+}
+
+/* ------------------------------------------------------------------- */
+
+.mer-info {
+	margin-top: 1em;
+}
+
+.price-info {
+	font-size: 3em;
+	margin-bottom: 2rem;
+	color: #d52e2e;
+}
+
+.menu-info {
+	font-size: 3em;
+	margin: 2rem 0 2rem;
+	color: #d52e2e;
+}
+
+/* ----------------------------------------------------------------------- */
+
+@media (max-width: 800px) {
+	.all-content-container {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.mer-info {
+		border-bottom: 2px solid black;
+	}
+	
 }

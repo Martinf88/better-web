@@ -25,4 +25,9 @@ main  {
 .welcome-p  {
 	text-align: center;
 	margin-top: 0.5em;
+	color: #d52e2e;
+}
+
+.welcome-h {
+	color: #d52e2e;
 }
