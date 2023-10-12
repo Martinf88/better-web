@@ -126,10 +126,27 @@ input {
 	color: #d52e2e;
 }
 
+
 .menu-info {
 	font-size: 3em;
 	margin: 2rem 0 2rem;
 	color: #d52e2e;
+}
+
+.menu-list > p {
+	font-style: italic;
+	font-size: small;
+}
+.menu-list :nth-child(1) {
+	color: rgb(59, 207, 115);
+}
+.menu-list :nth-child(4) {
+	color: #d52e2e;
+	margin-top: 1em;
+}
+.menu-list :nth-child(7) {
+	color: rgb(56, 56, 205);
+	margin-top: 1em;
 }
 
 /* ----------------------------------------------------------------------- */
