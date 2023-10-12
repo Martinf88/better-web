@@ -7,7 +7,6 @@ main  {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	justify-content: top;
 	
 }
 
@@ -39,4 +38,16 @@ main  {
 
 .welcome-h {
 	color: var(--logo-color);
+}
+
+.history-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em 20em 2em 20em;
+}
+
+.history-text > p {
+	margin: 0.2em;
+	text-align: center;
 }
