@@ -4,32 +4,51 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: top;
-	align-items: center;
-	background-color: #f6efef;
-	color: #d52e2e;
-	font-weight: lighter;
 
 }
 
 .huvudrubrik {
-	margin-top: 1em;
-	text-decoration: underline;
-	font-weight: lighter;
+	text-align: center;
+	margin: 1em 0 1em;
+	padding: 1em;
+	background-color: rgb(252, 166, 166);
+	-webkit-text-fill-color: #f9f5f5;
+  	-webkit-text-stroke: 1px #d52e2e;
+}
+
+.open-time {
+	text-align: center;
+	font-size: larger;
+	background-color: rgb(252, 166, 166);
+	-webkit-text-fill-color: #f9f5f5;
+  	-webkit-text-stroke: 1px #d52e2e;
+	padding: 1em;
+
+}
+
+.sem-date {
+	border-bottom: 2px solid black;
+	font-size: xx-large;
+	margin-bottom: 1em;
 }
 
 .sem-lista {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 1em 0 5em 0;
 	color: black;
 }
 
-ul > p {
+.topic {
 	margin: 0.2em 0 1em 0;
 	font-style: italic;
 	color: rgb(90, 88, 88);
 }
 
-li > h4 {
+.sem-time {
 	color: #d52e2e;
 	font-weight: lighter;
 	font-style: italic;
+	margin-bottom: 0.3em;
 }
