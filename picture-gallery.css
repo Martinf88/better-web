@@ -1,23 +1,32 @@
+:root {
+	--logo-color: #d52e2e;
+}
+
 main  {
 	min-height: 100vh;
 	display: flex;
+	flex-direction: column;
 	flex-grow: 1;
-	align-items: top;
-	justify-content: center;
+	justify-content: top;
 	
+}
+
+
+.banner {
+	border-bottom: 4px solid black;
 }
 
 .welcome-bunt {
 	text-align: center;
-	margin-top: 3em;
-	background-color: black;
-	height: 7.5em;
-	flex-grow: 1;
+	padding: 1em;
+	border-bottom: 4px solid black;
+	border-top: 4px solid black;
+	
 }
 
 .welcome-b {
 	margin-top: 1em;
-	background-color:#d52e2e ;
+	background-color:var(--logo-color) ;
 	color:#f9f5f5;
 	padding: 0.5em 1em;
 	cursor: pointer;
@@ -25,9 +34,9 @@ main  {
 .welcome-p  {
 	text-align: center;
 	margin-top: 0.5em;
-	color: #d52e2e;
+	color: var(--logo-color);
 }
 
 .welcome-h {
-	color: #d52e2e;
+	color: var(--logo-color);
 }
