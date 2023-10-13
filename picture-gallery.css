@@ -2,6 +2,8 @@
 	--logo-color: #d52e2e;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Libre+Baskerville&family=Playfair+Display&display=swap');
+
 main  {
 	min-height: 100vh;
 	display: flex;
@@ -11,17 +13,12 @@ main  {
 }
 
 
-.banner {
-	border-bottom: 4px solid black;
-}
-
 .welcome-bunt {
 	text-align: center;
 	padding: 1em;
-	border-bottom: 4px solid black;
-	border-top: 4px solid black;
-	
+	background-color: #f9f5f5;
 }
+
 
 .welcome-b {
 	margin-top: 1em;
@@ -29,9 +26,22 @@ main  {
 	color:#f9f5f5;
 	padding: 0.5em 1em;
 	cursor: pointer;
+	transition: 0.3s;
+	position: relative;
+	top:0;
 }
+
+
+.welcome-b:hover {
+	opacity: 0.8;
+	background-color: #f9f5f5;
+	color: var(--logo-color);
+	border-color: #f9f5f5;
+	box-shadow: 10px 6px 30px 2px grey;
+	top: -0.3em;
+}
+
 .welcome-p  {
-	text-align: center;
 	margin-top: 0.5em;
 	color: var(--logo-color);
 }
@@ -44,15 +54,38 @@ main  {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2em 20em 2em 20em;
+	padding: 2em 15em 2em 15em;
+	background-color: #f9f5f5;
+	
 }
 
 .history-text > p {
+	font-family: playfair display;
+	font-style: italic;
+	font-size: 1.1em;
+	padding: 0.3em;
 	margin: 0.2em;
 	text-align: center;
 }
 
-.per-molin {
+.barbro-larsson {
 	text-align: end;
-	margin-right: 2em;
+	margin-bottom: 2em;
+	padding-right: 4em;
+	background-color: #f9f5f5;
+}
+
+
+@media (max-width: 1200px) {
+	.history-text {
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+}
+
+@media (max-width: 500px) {
+	.history-text {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 }

@@ -1,12 +1,15 @@
+ @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Libre+Baskerville&family=Playfair+Display&display=swap');
+
+
 .top-nav {
-	background-color: #f2614b;
+	background-color: #5fc7cd;
 }
 
 footer {
-	background-color: rgb(80, 80, 80);
+	background-color: rgb(56, 56, 56);
 	color: #f9f5f5;
 }
 
 main {
-	background-color: whitesmoke;
+	background-color: #7dced2;
 }
