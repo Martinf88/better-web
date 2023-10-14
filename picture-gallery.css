@@ -2,6 +2,36 @@
 	--logo-color: #d52e2e;
 }
 
+/* Utility classes */
+.animate {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.animate--slow {
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+
+.animate--slower {
+	animation-delay: 2s;
+	animation-fill-mode: both;
+}
+
+/* Animations */
+@keyframes slideinleft {
+	from {
+		transform: translateX(-1200px);
+	}
+}
+
+.slideinleft {
+	animation-name: slideinleft;
+	animation-timing-function: ease-in;
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Libre+Baskerville&family=Playfair+Display&display=swap');
 
 main  {
@@ -12,16 +42,21 @@ main  {
 	
 }
 
-
 .welcome-bunt {
 	text-align: center;
 	padding: 1em;
 	background-color: #f9f5f5;
+
+}
+
+.welcome-h {
+	color: var(--logo-color);
 }
 
 
 .welcome-b {
 	margin-top: 1em;
+	border-radius: 10px;
 	background-color:var(--logo-color) ;
 	color:#f9f5f5;
 	padding: 0.5em 1em;
@@ -34,19 +69,15 @@ main  {
 
 .welcome-b:hover {
 	opacity: 0.8;
+	border: 5px solid black;
 	background-color: #f9f5f5;
 	color: var(--logo-color);
-	border-color: #f9f5f5;
 	box-shadow: 10px 6px 30px 2px grey;
 	top: -0.3em;
 }
 
 .welcome-p  {
 	margin-top: 0.5em;
-	color: var(--logo-color);
-}
-
-.welcome-h {
 	color: var(--logo-color);
 }
 
