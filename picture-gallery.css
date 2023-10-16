@@ -2,36 +2,6 @@
 	--logo-color: #d52e2e;
 }
 
-/* Utility classes */
-.animate {
-	animation-duration: 1s;
-	animation-fill-mode: both;
-}
-
-.animate--slow {
-	animation-delay: 1s;
-	animation-fill-mode: both;
-}
-
-.animate--slower {
-	animation-delay: 2s;
-	animation-fill-mode: both;
-}
-
-/* Animations */
-@keyframes slideinleft {
-	from {
-		transform: translateX(-1200px);
-	}
-}
-
-.slideinleft {
-	animation-name: slideinleft;
-	animation-timing-function: ease-in;
-}
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Libre+Baskerville&family=Playfair+Display&display=swap');
 
 main  {
@@ -51,6 +21,7 @@ main  {
 
 .welcome-h {
 	color: var(--logo-color);
+	letter-spacing: 5px;
 }
 
 
@@ -62,18 +33,14 @@ main  {
 	padding: 0.5em 1em;
 	cursor: pointer;
 	transition: 0.3s;
-	position: relative;
-	top:0;
 }
 
 
 .welcome-b:hover {
 	opacity: 0.8;
-	border: 5px solid black;
 	background-color: #f9f5f5;
 	color: var(--logo-color);
 	box-shadow: 10px 6px 30px 2px grey;
-	top: -0.3em;
 }
 
 .welcome-p  {
@@ -81,7 +48,7 @@ main  {
 	color: var(--logo-color);
 }
 
-.history-text {
+.history {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -90,32 +57,25 @@ main  {
 	
 }
 
-.history-text > p {
+.history-text, .barbro-larsson{
 	font-family: playfair display;
-	font-style: italic;
-	font-size: 1.1em;
-	padding: 0.3em;
-	margin: 0.2em;
+	font-size: 18px;
 	text-align: center;
-}
-
-.barbro-larsson {
-	text-align: end;
-	margin-bottom: 2em;
-	padding-right: 4em;
-	background-color: #f9f5f5;
+	margin-bottom: 1em;
+	line-height: 1.5;
+	max-width: 70ch;
 }
 
 
 @media (max-width: 1200px) {
-	.history-text {
+	.history {
 		padding-left: 5em;
 		padding-right: 5em;
 	}
 }
 
 @media (max-width: 500px) {
-	.history-text {
+	.history {
 		padding-left: 1em;
 		padding-right: 1em;
 	}
