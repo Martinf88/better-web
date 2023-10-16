@@ -43,6 +43,11 @@ main {
 .topic {
 	margin: 0.2em 0 1em 0;
 	color: rgb(90, 88, 88);
+	list-style: none;
+}
+
+.sem-name {
+	list-style: none;
 }
 
 .sem-time {

@@ -22,8 +22,9 @@ main  {
 }
 
 
-.welcome-b {
-	margin-top: 1em;
+.welcome-button {
+	text-decoration: none;
+	border: 3px solid black;
 	border-radius: 10px;
 	background-color:var(--logo-color) ;
 	color:#f9f5f5;
@@ -33,15 +34,17 @@ main  {
 }
 
 
-.welcome-b:hover {
+.welcome-button:hover {
 	opacity: 0.8;
 	background-color: #f9f5f5;
+	border: 3px solid var(--logo-color);
 	color: var(--logo-color);
 	box-shadow: 10px 6px 30px 2px grey;
 }
 
 .welcome-p  {
 	margin-top: 0.5em;
+	margin-bottom: 1em;
 	color: var(--logo-color);
 }
 
