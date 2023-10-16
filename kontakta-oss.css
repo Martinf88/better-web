@@ -26,11 +26,13 @@
 	animation-timing-function: ease-in;
 }
 
+
 main {
 	display: flex;
 	justify-content: center;
 	flex-grow: 1;
 	min-height: 100vh;
+	overflow: hidden;
 }
 
 .under-uppbyggnad {
@@ -42,6 +44,23 @@ main {
 
 }
 
-.hacker {
-	height: 20em;
+.hacker-div {
+	display: flex;
 }
+
+.hacker {
+	max-height: 20em;
+
+}
+
+/* @media (max-width: 600px) {
+	.hacker {
+		height: 15em;
+	}
+}
+
+@media (max-width: 450px) {
+	.hacker {
+		height: 11em;
+	}
+} */
