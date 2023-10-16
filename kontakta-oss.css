@@ -26,10 +26,22 @@
 	animation-timing-function: ease-in;
 }
 
-
 main {
 	display: flex;
 	justify-content: center;
 	flex-grow: 1;
 	min-height: 100vh;
+}
+
+.under-uppbyggnad {
+	background-color: yellow;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+
+}
+
+.hacker {
+	height: 20em;
 }
