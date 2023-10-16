@@ -37,78 +37,72 @@
 			
 		
 		<div class="all-content-container">
-				<form>
-					<p class="name-etc">Personuppgifter</p>
-					<section class="form-section">
-						<label for="form-name"> Namn </label>
-						<input id="form-name" type="text" placeholder="För- & efternamn"
-							required
-							minlength="5"
-
-							/>
-						<p class="error-message"> Var vänlig och fyll i för- & efternamn</p>
-					</section>
+			<form>
+				<p class="name-etc">Personuppgifter</p>
+				<section class="form-section">
+					<label for="form-name"> Namn </label>
+					<input id="form-name" type="text" placeholder="För- & efternamn" required minlength="5"/>
+					<p class="error-message"> Var vänlig och fyll i för- & efternamn</p>
+				</section>
 					
-					<section class="form-section">
-						<label for="form-adress"> Adress </label>
-						<input id="form-adress" type="text" required value="" placeholder="Adress" />
-						<p class="error-message"> Var vänlig och fyll i din adress</p>
-					</section>
+				<section class="form-section">
+					<label for="form-adress"> Adress </label>
+					<input id="form-adress" type="text" required value="" placeholder="Adress" />
+					<p class="error-message"> Var vänlig och fyll i din adress</p>
+				</section>
 		
-					<section class="form-section">
-						<label for="form-e-post"> E-postadress </label>
-						<input id="form-e-post" type="email" required value"" placeholder="E-post" />
-						<p class="error-message"> Fyll i en giltig e-postadress</p>
-					</section>
+				<section class="form-section">
+					<label for="form-e-post"> E-postadress </label>
+					<input id="form-e-post" type="email" required value"" placeholder="E-post" />
+					<p class="error-message"> Fyll i en giltig e-postadress</p>
+				</section>
 
-					<p class="buy-tickets">Köp biljetter</p>
-					<section class="form-section">
-						<div class="ticket-checklist">
-							<input type="checkbox" name="fri" id="dagar-1">
-							<label for="dagar-1">Fredag - 20/10</label>
-						</div>
-						<div class="ticket-checklist">
-							<input type="checkbox" name="sat" id="dagar-2">
-							<label for="dagar-2">Lördag - 21/10</label>
-						</div>
-						<div class="ticket-checklist">
-							<input type="checkbox" name="sun" id="dagar-3">
-							<label for="dagar-3">Söndag - 22/10</label>
-						</div>
-					</section>
+				<p class="buy-tickets">Köp biljetter</p>
+				<section class="form-section">
+					<div class="ticket-checklist">
+						<input type="checkbox" name="fri" id="dagar-1">
+						<label for="dagar-1">Fredag - 20/10</label>
+					</div>
+					<div class="ticket-checklist">
+						<input type="checkbox" name="sat" id="dagar-2">
+						<label for="dagar-2">Lördag - 21/10</label>
+					</div>
+					<div class="ticket-checklist">
+						<input type="checkbox" name="sun" id="dagar-3">
+						<label for="dagar-3">Söndag - 22/10</label>
+					</div>
+				</section>
 		
-					<section class="form-section">
-						<p class="kostval"> Mat </p>
-						<div class="veg">
-							<input id="mat" type="radio" name="veg" />
+				<section class="form-section">
+					<p class="kostval"> Mat </p>
+					<div class="veg">
 							<label for="mat"> Veganskt </label>	
-						</div>
-						<div class="meat">
-							<input id="mat" type="radio" name="kött" />
-							<label for="mat"> Kött </label>
-						</div>
-						<div class="fish">
-							<input id="mat" type="radio" name="fisk" /> 
-							<label for="mat"> Fisk </label>
-						</div>
-						<div class="no-food">
-							<input id="mat" type="radio" name="Inget" /> 
-							<label for="mat"> Inget </label>
-						</div>
-
-						<div class="allergiuppmaning">
-							<p>Har du några allergier eller speciella kostrestriktioner som vi bör vara medvetna om?</p><p> Var vänlig fyll i informationen nedan så att vi kan anpassa din upplevelse.</p>
-						</div>
-						
-						<div>
-							<label for="allergies"></label>
-							<input class="gluten-mm" type="text" name="allergi" id="allergies" placeholder="Allergier...">
-						</div>
+					</div>
+					<div class="meat">
+						<input id="mat" type="radio" name="kött" />
+						<label for="mat"> Kött </label>
+					</div>
+					<div class="fish">
+						<input id="mat" type="radio" name="fisk" /> 
+						<label for="mat"> Fisk </label>
+					</div>
+					<div class="no-food">
+						<input id="mat" type="radio" name="Inget" /> 
+						<label for="mat"> Inget </label>
+					
+					<div class="allergiuppmaning">
+							<em><p>Har du några allergier eller speciella kostrestriktioner som vi bör vara medvetna om?</p><p> Var vänlig fyll i informationen nedan så att vi kan anpassa din upplevelse.</p></em>
+					</div>
+					
+					<div>
+						<label for="allergies"></label>
+						<input class="gluten-mm" type="text" name="allergi" id="allergies" placeholder="Allergier...">
+					</div>
 		
-					</section>
+				</section>
 
 					<section>
-						<button class="finalize">
+						<button class="finalize-button">
 							Slutför köp
 						</button>
 					</section>
@@ -116,7 +110,7 @@
 
 				<div class="mer-info">
 					<p class="price-info">Priser</p>
-					<ul>
+					<ul class="price-ul">
 						<li>Endagarspass: 150kr</li>
 						<li>Alla dagar: 400kr</li>
 						<li>Lunch: 75kr</li>

@@ -4,14 +4,22 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: top;
+	
+}
 
+.sign-up-header {
+	text-align: center;
+	margin: 0 0 1em;
+	padding: 1em;
+	background-color:#f9f5f5;
+	-webkit-text-fill-color: #f9f5f5;
+	-webkit-text-stroke: 1px var(--logo-color);
 }
 
 form {
 	border-radius: 10px;
 	margin: 0.5em 0;
 	padding: 0 1em;
-	font-style: italic;
 	max-width: 30em;
 }
 
@@ -26,14 +34,6 @@ form {
 	justify-content: space-around;
 }
 
-.sign-up-header {
-	text-align: center;
-	margin: 0 0 1em;
-	padding: 1em;
-	background-color:#f9f5f5;
-	-webkit-text-fill-color: #f9f5f5;
-  	-webkit-text-stroke: 1px #d52e2e;
-}
 
 
 .name-etc {
@@ -64,7 +64,7 @@ form {
 	color:rgb(48, 185, 48);
 }
 .meat{
-	color: #d52e2e;
+	color: var(--logo-color);
 }
 .fish {
 	color: rgb(56, 56, 205);
@@ -77,27 +77,23 @@ form {
 	margin-bottom: 1em;
 	padding-top: 1em;
 	font-size: medium;
-	font-style: italic;
 }
 
-.finalize {
-	margin: 1em 0 2em 0;
-	background-color:#d52e2e ;
+.finalize-button {
+	margin-top: 1em;
+	border-radius: 10px;
+	background-color:var(--logo-color) ;
 	color:#f9f5f5;
 	padding: 0.5em 1em;
 	cursor: pointer;
 	transition: 0.3s;
-	position: relative;
-	top:0;
 }
 
-.finalize:hover {
+.finalize-button:hover {
 	opacity: 0.8;
 	background-color: #f9f5f5;
-	color:#d52e2e;
-	border-color: #f9f5f5;
+	color: var(--logo-color);
 	box-shadow: 10px 6px 30px 2px grey;
-	top: -0.3em;
 }
 /* ------------------------------------------------------- */
 
@@ -106,7 +102,7 @@ input:valid {
 	
 }
 input:invalid {
-	border: 2px solid #d52e2e;
+	border: 2px solid var(--logo-color);
 }
 
 .gluten-mm:valid {
@@ -116,7 +112,7 @@ input:invalid {
 .error-message {
 	visibility: hidden;
 	margin: 0;
-	color: #d52e2e;
+	color: var(--logo-color);
 }
 input:invalid + .error-message {
 	visibility: visible;
@@ -133,27 +129,29 @@ input {
 }
 
 .price-info {
-	font-size: 3em;
+	font-size: 50px;
 	margin-bottom: 2rem;
-	color: #d52e2e;
+	color: var(--logo-color);
+}
+
+.price-ul {
+	line-height: 2;
 }
 
 
 .menu-info {
-	font-size: 3em;
+	font-size: 50px;
 	margin: 2rem 0 2rem;
-	color: #d52e2e;
+	color: var(--logo-color) ;
+	line-height: 1.5;
 }
 
-.menu-list > p {
-	font-style: italic;
-	font-size: small;
-}
+
 .menu-list :nth-child(1) {
 	color: rgb(48, 185, 48);
 }
 .menu-list :nth-child(4) {
-	color: #d52e2e;
+	color: var(--logo-color) ;
 	margin-top: 1em;
 }
 .menu-list :nth-child(7) {
