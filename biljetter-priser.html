@@ -74,20 +74,22 @@
 		
 				<section class="form-section">
 					<p class="kostval"> Mat </p>
-					<div class="veg">
-							<label for="mat"> Veganskt </label>	
+					<div>
+						<input id="veg" type="radio" name="veganskt">
+						<label class="veg" for="veg"> Veganskt </label>	
 					</div>
-					<div class="meat">
-						<input id="mat" type="radio" name="kött" />
-						<label for="mat"> Kött </label>
+					<div>
+						<input id="meat" type="radio" name="kött">
+						<label class="meat" for="meat"> Kött </label>
 					</div>
-					<div class="fish">
-						<input id="mat" type="radio" name="fisk" /> 
-						<label for="mat"> Fisk </label>
+					<div>
+						<input id="fish" type="radio" name="fisk"> 
+						<label class="fish" for="fish"> Fisk </label>
+					</div>				
+					<div>
+						<input id="no-food" type="radio" name="Inget"> 
+						<label class="no-food" for="no-food"> Inget </label>
 					</div>
-					<div class="no-food">
-						<input id="mat" type="radio" name="Inget" /> 
-						<label for="mat"> Inget </label>
 					
 					<div class="allergiuppmaning">
 							<em><p>Har du några allergier eller speciella kostrestriktioner som vi bör vara medvetna om?</p><p> Var vänlig fyll i informationen nedan så att vi kan anpassa din upplevelse.</p></em>
@@ -109,24 +111,29 @@
 
 				<div class="mer-info">
 					<p class="price-info">Priser</p>
-					<ul class="price-ul">
+					<ul class="price-menu-ul">
 						<li>Endagarspass: 150kr</li>
 						<li>Alla dagar: 400kr</li>
 						<li>Lunch: 75kr</li>
 					</ul>
 					
 					<p class=" menu-info">Meny</p>
-						<ul class="menu-list">
-							<li>Veganskt</li>
-							<p>Kokta morötter</p>
-							<p>Serveras på en bädd av glödande kol</p>
-							<li>Kött</li>
-							<p>Älgstek med rökt sidfläsk</p>
-							<p>Serveras med höstens primörer</p>
-							<li>Fisk</li>
-							<p>Rökt kummel med vitvinssås</p>
-							<p>Serveras med hunungsslungad palsternacka</p>
-						</ul>				
+						<ul class="price-menu-ul">
+							<li class="veg">Veganskt</li>
+						</ul>
+						<p>Kokta morötter</p>
+						<p>Serveras på en bädd av glödande kol</p>	
+						<ul class="price-menu-ul">
+							<li class="meat">Kött</li>
+						</ul>		
+						<p>Älgstek med rökt sidfläsk</p>
+						<p>Serveras med höstens primörer</p>
+						<ul class="price-menu-ul">
+							<li class="fish">Fisk</li>
+						</ul>	
+						<p>Rökt kummel med vitvinssås</p>
+						<p>Serveras med hunungsslungad palsternacka</p>
+				
 				</div>
 
 

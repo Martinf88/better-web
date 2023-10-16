@@ -23,7 +23,7 @@ form {
 	max-width: 30em;
 }
 
-.form-section {
+.form-section  {
 	display: flex;
 	flex-direction: column;
 	margin: 1em 0;
@@ -134,7 +134,11 @@ input {
 	color: var(--logo-color);
 }
 
-.price-ul {
+.price-menu-ul {
+	margin-top: 0.5em;
+}
+
+.price-menu-ul + p {
 	line-height: 2;
 }
 
@@ -144,19 +148,6 @@ input {
 	margin: 2rem 0 2rem;
 	color: var(--logo-color) ;
 	line-height: 1.5;
-}
-
-
-.menu-list :nth-child(1) {
-	color: rgb(48, 185, 48);
-}
-.menu-list :nth-child(4) {
-	color: var(--logo-color) ;
-	margin-top: 1em;
-}
-.menu-list :nth-child(7) {
-	color: rgb(56, 56, 205);
-	margin-top: 1em;
 }
 
 /* ----------------------------------------------------------------------- */
