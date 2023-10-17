@@ -21,13 +21,14 @@
 	  }
 }
 
-
+body {
+	min-height: 100vh;
+}
 
 main {
 	display: flex;
 	justify-content: center;
 	flex-grow: 1;
-	min-height: 100vh;
 	overflow: hidden;
 }
 
@@ -48,6 +49,7 @@ main {
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
 	animation-fill-mode: both;
+	padding-bottom: 2em;
 }
 
 .hacker {

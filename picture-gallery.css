@@ -1,8 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Libre+Baskerville&family=Playfair+Display&display=swap');
 
-main  {
+body {
 	min-height: 100vh;
+}
+
+main  {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;

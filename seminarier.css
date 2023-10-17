@@ -1,10 +1,12 @@
-main {
+body {
 	min-height: 100vh;
+}
+
+main {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: top;
-
 }
 
 .huvudrubrik {
@@ -26,6 +28,19 @@ main {
 
 }
 
+.html-logga {
+	width: 300px;
+	position: sticky;
+	top: 20px;
+}
+
+.css-logga {
+	height: 310px;
+	width: 300px;
+	position: sticky;
+	top: 20px;
+}
+
 .sem-date {
 	border-bottom: 2px solid black;
 	font-size: xx-large;
@@ -34,10 +49,12 @@ main {
 
 .sem-lista {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 1em 0 5em 0;
+	flex-direction: row;
+	align-items: start;
+	justify-content: space-evenly;
+	margin: 2em 0 2em 0;
 	color: black;
+	flex-wrap: wrap;
 }
 
 .topic {
@@ -55,4 +72,22 @@ main {
 	font-weight: lighter;
 	font-style: italic;
 	margin-bottom: 0.3em;
+}
+
+
+@media (max-width: 1300px) {
+	.sem-lista {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.css-logga {
+		margin-top: 2em;
+		position: static;
+	}
+
+	.html-logga {
+		margin-bottom: 2em;
+		position: static;
+	}
 }
