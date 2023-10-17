@@ -17,8 +17,7 @@ main {
 }
 
 form {
-	border-radius: 10px;
-	margin: 0.5em 0;
+	margin-bottom: 1em;
 	padding: 0 1em;
 	max-width: 30em;
 }
@@ -121,6 +120,7 @@ input {
 	font-size: 50px;
 	margin-bottom: 2rem;
 	color: var(--logo-color);
+	font-weight: lighter;
 }
 
 .price-menu-ul {
@@ -137,11 +137,12 @@ input {
 	margin: 2rem 0 2rem;
 	color: var(--logo-color) ;
 	line-height: 1.5;
+	font-weight: lighter;
 }
 
 /* ----------------------------------------------------------------------- */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 	.all-content-container {
 		display: flex;
 		flex-direction: column-reverse;
@@ -149,7 +150,7 @@ input {
 	}
 
 	.mer-info {
-		border-bottom: 2px solid black;
+		margin-bottom: 5em;
 	}
 	
 }
