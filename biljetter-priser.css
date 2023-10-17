@@ -39,25 +39,14 @@ form {
 .name-etc {
 	margin: 1em 0 2em;
 	border-bottom: 2px solid black;
-}
-/* ------------------------------------------------------- */
-
-.buy-tickets {
-	border-bottom: 2px solid black;
-	margin: 2em 0 2em;
-	padding-top: 1em;
+	font-size: 18px;
+	font-weight: lighter;
 }
 
 .ticket-checklist {
 	background-color:#f9f5f5;
 	border-radius: 5px;
 	margin-bottom: 2px;
-}
-/* ----------------------------------------------------- */
-
-.kostval {
-	border-bottom: 2px solid black;
-	margin: 1em 0 2em;
 }
 
 .veg {
