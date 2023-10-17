@@ -1,205 +1,194 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bättre Webb/Biljetter och priser</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="footer.css">
-	<link rel="stylesheet" href="biljetter-priser.css">
-	<link rel="stylesheet" href="colors.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bättre Webb/Biljetter och priser</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="biljetter-priser.css">
+    <link rel="stylesheet" href="colors.css">
 </head>
 
 <body>
-	<div class="top-nav">
-		<div>
-			<a href="index.html"><img class="logga" src="bilder/newloggabw.png" alt="Bättre Webb Logga"></a>
-		</div>
-		<input id="menu-toggle" type="checkbox">
-		<label class='menu-button-container' for="menu-toggle">
-		<span class='menu-button'></span>
-	  </label>
-		<ul class="menu">
-		  <li><a class="button" href="seminarier.html">Seminarier</a></li>
-		  <!-- <li><a class="button" href="">Beställ Mat</a></li> -->
-		  <li><a class="button" href="biljetter-priser.html"> Biljetter & Priser</a></li>
-		  <li><a class="button" href="kontakta-oss.html">Kontakta Oss</a></li>
-		</ul>
-	</div>
+    <div class="top-nav">
+        <div>
+            <a href="index.html"><img class="logga" src="bilder/newloggabw.png" alt="Bättre Webb Logga"></a>
+        </div>
+        <input id="menu-toggle" type="checkbox">
+        <label class="menu-button-container" for="menu-toggle">
+            <span class="menu-button"></span>
+        </label>
+        <ul class="menu">
+            <li><a class="button" href="seminarier.html">Seminarier</a></li>
+            <!-- <li><a class="button" href="">Beställ Mat</a></li> -->
+            <li><a class="button" href="biljetter-priser.html">Biljetter & Priser</a></li>
+            <li><a class="button" href="kontakta-oss.html">Kontakta Oss</a></li>
+        </ul>
+    </div>
 
+    <main>
+        <h1 class="sign-up-header">Biljetter & Priser</h1>
 
+        <div class="all-content-container">
+            <form>
+                <section class="form-section">
+                    <h2 class="name-etc">Personuppgifter</h2>
+                    <label for="form-name">Namn</label>
+                    <input id="form-name" type="text" placeholder="För- & efternamn" required minlength="5">
+                    <p class="error-message">Var vänlig och fyll i för- & efternamn</p>
+                </section>
 
+                <section class="form-section">
+                    <label for="form-adress">Adress</label>
+                    <input id="form-adress" type="text" required value="" placeholder="Adress">
+                    <p class="error-message">Var vänlig och fyll i din adress</p>
+                </section>
 
-	
-	<main>
-		<h1 class="sign-up-header"> Biljetter & Priser </h1>
-			
-		
-		<div class="all-content-container">
-			<form>
-				
-				<section class="form-section">
-					<h2 class="name-etc">Personuppgifter</h2>
-					<label for="form-name"> Namn </label>
-					<input id="form-name" type="text" placeholder="För- & efternamn" required minlength="5">
-					<p class="error-message"> Var vänlig och fyll i för- & efternamn</p>
-				</section>
-					
-				<section class="form-section">
-					<label for="form-adress"> Adress </label>
-					<input id="form-adress" type="text" required value="" placeholder="Adress">
-					<p class="error-message"> Var vänlig och fyll i din adress</p>
-				</section>
-		
-				<section class="form-section">
-					<label for="form-e-post"> E-postadress </label>
-					<input id="form-e-post" type="email" required value="" placeholder="E-post">
-					<p class="error-message"> Fyll i en giltig e-postadress</p>
-				</section>
+                <section class="form-section">
+                    <label for="form-e-post">E-postadress</label>
+                    <input id="form-e-post" type="email" required value="" placeholder="E-post">
+                    <p class="error-message">Fyll i en giltig e-postadress</p>
+                </section>
 
-				<section class="form-section">
-					<h3 class="name-etc">Köp biljetter</h3>
-					<div class="ticket-checklist">
-						<input type="checkbox" name="fri" id="dagar-1">
-						<label for="dagar-1">Fredag - 20/10</label>
-					</div>
-					<div class="ticket-checklist">
-						<input type="checkbox" name="sat" id="dagar-2">
-						<label for="dagar-2">Lördag - 21/10</label>
-					</div>
-					<div class="ticket-checklist">
-						<input type="checkbox" name="sun" id="dagar-3">
-						<label for="dagar-3">Söndag - 22/10</label>
-					</div>
-				</section>
-		
-				<section class="form-section">
-					<h4 class="name-etc"> Mat </h4>
-					
-						<div class="fre-lör-sön">
-							<p>Fredag</p>
-							<div>
-								<input id="veg" type="radio" name="foodfredag">
-								<label class="veg" for="veg"> Veganskt </label>	
-							</div>
-							<div>
-								<input id="meat" type="radio" name="foodfredag">
-								<label class="meat" for="meat"> Kött </label>
-							</div>
-							<div>
-								<input id="fish" type="radio" name="foodfredag"> 
-								<label class="fish" for="fish"> Fisk </label>
-							</div>				
-							<div>
-								<input id="no-food" type="radio" name="foodfredag"> 
-								<label class="no-food" for="no-food"> Inget </label>
-							</div>
-						</div>
-					
-						<div class="fre-lör-sön">
-							<p>Lördag</p>
-							<div>
-								<input id="veg" type="radio" name="foodlördag">
-								<label class="veg" for="veg"> Veganskt </label>	
-							</div>
-							<div>
-								<input id="meat" type="radio" name="foodlördag">
-								<label class="meat" for="meat"> Kött </label>
-							</div>
-							<div>
-								<input id="fish" type="radio" name="foodlördag"> 
-								<label class="fish" for="fish"> Fisk </label>
-							</div>				
-							<div>
-								<input id="no-food" type="radio" name="foodlördag"> 
-								<label class="no-food" for="no-food"> Inget </label>
-						</div>
-						
-						<div class="fre-lör-sön">
-							<p>Söndag</p>
-							<div>
-								<input id="veg" type="radio" name="foodsöndag">
-								<label class="veg" for="veg"> Veganskt </label>	
-							</div>
-							<div>
-								<input id="meat" type="radio" name="foodsöndag">
-								<label class="meat" for="meat"> Kött </label>
-							</div>
-							<div>
-								<input id="fish" type="radio" name="foodsöndag"> 
-								<label class="fish" for="fish"> Fisk </label>
-							</div>				
-							<div>
-								<input id="no-food" type="radio" name="foodsöndag"> 
-								<label class="no-food" for="no-food"> Inget </label>
-							</div>
-						</div>
-					
-					
-					<div class="allergiuppmaning">
-							<p><em>Har du några allergier eller speciella kostrestriktioner som vi bör vara medvetna om?</em></p><p><em>Var vänlig fyll i informationen nedan så att vi kan anpassa din upplevelse.</em></p>
-					</div>
-					
-					<div>
-						<label for="allergies"></label>
-						<input class="gluten-mm" type="text" name="allergi" id="allergies" placeholder="Allergier...">
-					</div>
-		
-				</section>
+                <section class="form-section">
+                    <h3 class="name-etc">Köp biljetter</h3>
+                    <div class="ticket-checklist">
+                        <input type="checkbox" name="fri" id="dagar-1">
+                        <label for="dagar-1">Fredag - 20/10</label>
+                    </div>
+                    <div class="ticket-checklist">
+                        <input type="checkbox" name="sun" id="dagar-2">
+                        <label for "dagar-2">Lördag - 21/10</label>
+                    </div>
+                    <div class="ticket-checklist">
+                        <input type="checkbox" name="sun" id="dagar-3">
+                        <label for="dagar-3">Söndag - 22/10</label>
+                    </div>
+                </section>
 
-					<section>
-						<button class="finalize-button">
-							Slutför köp
-						</button>
-					</section>
-				</form>
+                <h4 class="name-etc">Mat</h4>
 
-				<div class="mer-info">
-					<h5 class="price-info">Priser</h5>
-					<ul class="price-menu-ul">
-						<li>Endagarspass: 150kr</li>
-						<li>Alla dagar: 400kr</li>
-						<li>Lunch: 75kr</li>
-					</ul>
-					
-					<h6 class=" menu-info">Meny</h6>
-						<ul class="price-menu-ul">
-							<li class="veg">Veganskt</li>
-						</ul>
-						<p>Kokta morötter</p>
-						<p>Serveras på en bädd av glödande kol</p>	
-						<ul class="price-menu-ul">
-							<li class="meat">Kött</li>
-						</ul>		
-						<p>Älgstek med rökt sidfläsk</p>
-						<p>Serveras med höstens primörer</p>
-						<ul class="price-menu-ul">
-							<li class="fish">Fisk</li>
-						</ul>	
-						<p>Rökt kummel med vitvinssås</p>
-						<p>Serveras med hunungsslungad palsternacka</p>
-				
-				</div>
+                <section class="form-section">
+                    <div class="grid-section">
+                        <img class="food-logga" src="bilder/food-logga.png" alt="Hamburgemeny-logga">
+                        <div class="grid-item1">
+                            <div>
+                                <p>Fredag</p>
+                                <input id="veg" type="radio" name="foodfredag">
+                                <label class="veg" for="veg">Veganskt</label>
+                            </div>
+                            <div>
+                                <input id="meat" type="radio" name="foodfredag">
+                                <label class="meat" for="meat">Kött</label>
+                            </div>
+                            <div>
+                                <input id="fish" type="radio" name="foodfredag">
+                                <label class="fish" for="fish">Fisk</label>
+                            </div>
+                            <div>
+                                <input id="no-food" type="radio" name="foodfredag">
+                                <label class="no-food" for="no-food">Inget</label>
+                            </div>
+                        </div>
 
+                        <div class="grid-item2">
+                            <p>Lördag</p>
+                            <div>
+                                <input id="veg-sat" type="radio" name="foodlördag">
+                                <label class="veg" for="veg-sat">Veganskt</label>
+                            </div>
+                            <div>
+                                <input id="meat-sat" type="radio" name="foodlördag">
+                                <label class="meat" for="meat-sat">Kött</label>
+                            </div>
+                            <div>
+                                <input id="fish-sat" type="radio" name="foodlördag">
+                                <label class="fish" for="fish-sat">Fisk</label>
+                            </div>
+                            <div>
+                                <input id="no-food-sat" type="radio" name="foodlördag">
+                                <label class="no-food" for="no-food-sat">Inget</label>
+                            </div>
+                        </div>
 
-		</div>
-			
-				
+                        <div class="grid-item3">
+                            <p>Söndag</p>
+                            <div>
+                                <input id="veg-sun" type="radio" name="foodsöndag">
+                                <label class="veg" for="veg-sun">Veganskt</label>
+                            </div>
+                            <div>
+                                <input id="meat-sun" type="radio" name="foodsöndag">
+                                <label class="meat" for="meat-sun">Kött</label>
+                            </div>
+                            <div>
+                                <input id="fish-sun" type="radio" name="foodsöndag">
+                                <label class="fish" for="fish-sun">Fisk</label>
+                            </div>
+                            <div>
+                                <input id="no-food-sun" type="radio" name="foodsöndag">
+                                <label class="no-food" for="no-food-sun">Inget</label>
+                            </div>
+                        </div>
+                    </div>
 
-	</main>
+                    <section>
+                        <div class="allergiuppmaning">
+                            <p><em>Har du några allergier eller speciella kostrestriktioner som vi bör vara medvetna om?</em></p>
+                            <p><em>Var vänlig fyll i informationen nedan så att vi kan anpassa din upplevelse.</em></p>
+                        </div>
 
-	<footer>
-		<div class="adress">
-			<p>Mässans Gata</p>
-			<p>412 94</p>
-			<p>Göteborg</p>
-		</div>
-		
+                        <div>
+                            <label for="allergies">Allergier</label>
+                            <input class="gluten-mm" type="text" name="allergi" id="allergies" placeholder="Allergier...">
+                        </div>
+                    </section>
+                </section>
 
-		<div class="footer-links">
-			<a class="foot-link" href="">Kontakt</a>
-		</div>
-		
-	</footer>
+                <section>
+                    <button class="finalize-button">Slutför köp</button>
+                </section>
+            </form>
+
+            <div class="mer-info">
+                <h5 class="price-info">Priser</h5>
+                <ul class="price-menu-ul">
+                    <li>Endagarspass: 150kr</li>
+                    <li>Alla dagar: 400kr</li>
+                    <li>Lunch: 75kr</li>
+                </ul>
+
+                <h6 class="menu-info">Meny</h6>
+                <ul class="price-menu-ul">
+                    <li class="veg">Veganskt</li>
+                </ul>
+                <p>Kokta morötter</p>
+                <p>Serveras på en bädd av glödande kol</p>
+                <ul class="price-menu-ul">
+                    <li class="meat">Kött</li>
+                </ul>
+                <p>Älgstek med rökt sidfläsk</p>
+                <p>Serveras med höstens primörer</p>
+                <ul class="price-menu-ul">
+                    <li class="fish">Fisk</li>
+                </ul>
+                <p>Rökt kummel med vitvinssås</p>
+                <p>Serveras med honungsslungad palsternacka</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="adress">
+            <p>Mässans Gata</p>
+            <p>412 94</p>
+            <p>Göteborg</p>
+        </div>
+
+        <div class="footer-links">
+            <a class="foot-link" href="">Kontakt</a>
+        </div>
+    </footer>
 </body>
 </html>

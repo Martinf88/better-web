@@ -1,5 +1,8 @@
-main {
+body {
 	min-height: 100vh;
+}
+
+main {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -58,8 +61,26 @@ form {
 	color: rgb(56, 56, 205);
 }
 
-.fre-lör-sön {
-	margin-top: 1rem;
+.food-logga {
+	width: 300px;
+	grid-column: 2 / 2;
+	grid-row: auto;
+}
+
+.grid-item1 {
+	grid-row: 1 / 1;
+}
+.grid-item2 {
+	grid-row: 2 / 2;
+}
+.grid-item3 {
+	grid-row: 3 / 3;
+}
+
+.grid-section {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 8em 8em 8em;
 }
 
 .allergiuppmaning {
@@ -155,6 +176,11 @@ input {
 
 	.mer-info {
 		margin-bottom: 5em;
+		padding: 0 5em 0 5em;
+	}
+
+	.food-logga {
+		width: 200px;
 	}
 	
 }
