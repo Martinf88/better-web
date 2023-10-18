@@ -7,6 +7,7 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: top;
+	color: rgb(58, 58, 58);
 }
 
 .huvudrubrik {
@@ -53,7 +54,6 @@ main {
 	align-items: start;
 	justify-content: space-evenly;
 	margin: 2em 0 2em 0;
-	color: black;
 	flex-wrap: wrap;	
 }
 
@@ -66,12 +66,14 @@ main {
 
 .topic {
 	margin: 0.2em 0 1em 0;
-	color: rgb(90, 88, 88);
 	list-style: none;
+	
 }
 
 .sem-name {
 	list-style: none;
+	background-color: #f9f5f5;
+	border-radius: 1px;
 }
 
 .sem-time {

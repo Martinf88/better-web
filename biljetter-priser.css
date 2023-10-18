@@ -7,6 +7,7 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 	justify-content: top;
+	color: rgb(58, 58, 58);
 	
 }
 
@@ -166,8 +167,12 @@ input {
 	list-style-type: none;
 }
 
+.food-menu-ul ~ p {
+	margin: 0.3em 0 0.3em;
+}
+
 .price-menu-ul {
-	line-height: 2;
+	line-height: 2em;
 }
 
 
