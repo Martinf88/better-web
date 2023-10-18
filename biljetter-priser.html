@@ -11,21 +11,20 @@
 </head>
 
 <body>
-    <div class="top-nav">
-        <div>
-            <a href="index.html"><img class="logga" src="bilder/newloggabw.png" alt="Bättre Webb Logga"></a>
-        </div>
-        <input id="menu-toggle" type="checkbox">
-        <label class="menu-button-container" for="menu-toggle">
-            <span class="menu-button"></span>
-        </label>
-        <ul class="menu">
-            <li><a class="button" href="seminarier.html">Seminarier</a></li>
-            <!-- <li><a class="button" href="">Beställ Mat</a></li> -->
-            <li><a class="button" href="biljetter-priser.html">Biljetter & Priser</a></li>
-            <li><a class="button" href="kontakta-oss.html">Kontakta Oss</a></li>
-        </ul>
-    </div>
+	<header class="top-nav">
+		<div>
+			<a href="index.html"><img class="logga" src="bilder/newloggabw.png" alt="Bättre Webb Logga"></a>
+		</div>
+		<input id="menu-toggle" type="checkbox">
+		<label class='menu-button-container' for="menu-toggle">
+		<span class='menu-button'></span>
+	  </label>
+		<ul class="menu">
+		  <li><a class="button" href="seminarier.html">Seminarier</a></li>
+		  <li><a class="button" href="biljetter-priser.html"> Biljetter & Priser</a></li>
+		  <li><a class="button" href="kontakta-oss.html">Kontakta Oss</a></li>
+		</ul>
+	</header>
 
     <main>
         <h1 class="sign-up-header">Biljetter & Priser</h1>
@@ -71,7 +70,7 @@
 
                 <section class="form-section">
                     <div class="grid-section">
-                        <img class="food-logga" src="bilder/food-logga.png" alt="Hamburgemeny-logga">
+                        <img class="food-logga" src="bilder/knifeandfork.png" alt="Rolig logga, gubbe står och spyr">
                         <div class="grid-item1">
                             <div>
                                 <p>Fredag</p>
@@ -152,25 +151,32 @@
             </form>
 
             <div class="mer-info">
-                <h5 class="price-info">Priser</h5>
-                <ul class="price-menu-ul">
-                    <li>Endagarspass: 150kr</li>
-                    <li>Alla dagar: 400kr</li>
-                    <li>Lunch: 75kr</li>
-                </ul>
+				<div class="price-container">
+					<img class="flannel-dude" src="bilder/flannelshirtguy.png" alt="Hipster i flannelskjorta med sedlar i händerna">
+					<div class="price-info-container">
+						<h2 class="price-info">Priser</h2>
+						<ul class="price-menu-ul">
+						<li>Endagarspass: 150kr</li>
+						<li>Alla dagar: 400kr</li>
+						<li>Lunch: 75kr</li>
+					</ul>
+					</div>
+					
+				</div>
+              
 
-                <h6 class="menu-info">Meny</h6>
-                <ul class="price-menu-ul">
+                <h2 class="menu-info">Meny</h2>
+                <ul class="food-menu-ul">
                     <li class="veg">Veganskt</li>
                 </ul>
                 <p>Kokta morötter</p>
                 <p>Serveras på en bädd av glödande kol</p>
-                <ul class="price-menu-ul">
+                <ul class="food-menu-ul">
                     <li class="meat">Kött</li>
                 </ul>
                 <p>Älgstek med rökt sidfläsk</p>
                 <p>Serveras med höstens primörer</p>
-                <ul class="price-menu-ul">
+                <ul class="food-menu-ul">
                     <li class="fish">Fisk</li>
                 </ul>
                 <p>Rökt kummel med vitvinssås</p>

@@ -54,12 +54,12 @@ main {
 	justify-content: space-evenly;
 	margin: 2em 0 2em 0;
 	color: black;
-	flex-wrap: wrap;
-	
+	flex-wrap: wrap;	
 }
 
 .sem-lista {
 	list-style-type: none;
+	font-family: playfair display;
 }
 
 
